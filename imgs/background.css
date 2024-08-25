@@ -10,13 +10,14 @@ body{
     background-position: 30% 45%;
     background-size: cover;
 }
+p, button{
+    font-size: 30px;
+}
 
-footer, .contexto {
+.contexto {
 	background-color: rgba(35, 42, 49, 0.3);
 	padding: 20px;
-	text-align: center;
 	margin: 10px;
-    font-size:22px;
     color:#080b07;
     line-height:30px;
     border-radius: none;
@@ -55,11 +56,10 @@ footer, .contexto {
 .btn-proximo{
     padding: 15px;
     color: #000000;
-    font-weight: 600;
     border: none;
     margin-top: 20px;
     border-radius: 7px;
-    background-color: rgba(222, 228, 236, 0.6);
+    background-color: rgba(222, 228, 236, 0.4);
     cursor: pointer;
     transform: all linear 198ms;
 }

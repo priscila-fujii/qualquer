@@ -15,7 +15,7 @@ function comparandoStrings(v1, v2){
     array2 = array2.sort().join('');
 
     // verificando se sao iguais
-    return (array1 === array2);
+    return (array1 == array2);
 }
 function opcaoUm(){
     var op1 = btn1.textContent;
@@ -30,16 +30,17 @@ function recomeco(){
     window.alert("tente novamente...");
     location.reload();
 }   
-
-
-btn2.addEventListener('click', () => { 
-    if(opcaoDois()){
-        window.location.replace("intro-dois.html");
-    }});   
 btn1.addEventListener('click', () => { 
     if(opcaoUm()){
        setTimeout(recomeco(), 5000);
     }});
+
+btn2.addEventListener('click', () => { 
+    if(opcaoDois()){
+        window.location.replace("intro-dois.html");
+    }});
+
+
 
 /*
 const secao = document.querySelector(".container");
