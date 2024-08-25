@@ -1,23 +1,9 @@
+
 const secao = document.querySelector(".container");
 
 const btn1 = document.getElementById("op1");
 const btn2 = document.getElementById("op2");
 const resposta = "O atrito aconteceu pois Bruno foi amante da namorada de Marcos";
-
-function opcaoUm(){
-    var op1 = btn1.textContent;
-    comparandoStrings(op1, resposta);
-}
-function opcaoDois(){
-    var op2 = btn2.textContent;
-    comparandoStrings(op2, resposta);
-}
-btn1.addEventListener('click', () => {
-    opcaoUm();
-});
-btn2.addEventListener('click', () => {
-    opcaoDois();
-});
 
 function comparandoStrings(v1, v2){
     // separando
@@ -29,9 +15,32 @@ function comparandoStrings(v1, v2){
     array2 = array2.sort().join('');
 
     // verificando se sao iguais
-    console.log( array1 == array2 );
-
+    return (array1 === array2);
 }
+function opcaoUm(){
+    var op1 = btn1.textContent;
+    return comparandoStrings(op1, resposta);
+}
+function opcaoDois(){
+    var op2 = btn2.textContent;
+    return comparandoStrings(op2, resposta);
+}
+
+function recomeco(){
+    window.alert("tente novamente...");
+    location.reload();
+}   
+
+
+btn2.addEventListener('click', () => { 
+    if(opcaoDois()){
+        window.location.replace("intro-dois.html");
+    }});   
+btn1.addEventListener('click', () => { 
+    if(opcaoUm()){
+       setTimeout(recomeco(), 5000);
+    }});
+
 /*
 const secao = document.querySelector(".container");
 
