@@ -10,7 +10,7 @@ body{
     background-position: 30% 45%;
     background-size: cover;
 }
-footer, .contexto {
+footer {
 	background-color: rgba(35, 42, 49, 0.3);
 	padding: 20px;
 	text-align: center;
