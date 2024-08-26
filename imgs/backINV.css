@@ -3,12 +3,12 @@
     padding: 0;
 }
 body{
-    background: url('investigar.png');
+    background: url('faca.png');
     display: table;
     width: 100%;
     height: 100vh;
     background-position: 50% 70%;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 footer{
@@ -17,7 +17,7 @@ footer{
 	text-align: center;
 	margin: 10px;
     font-size:22px;
-    color:#080b07;
+    color:#ffffff;
     line-height:30px;
     border-radius: none;
 }
