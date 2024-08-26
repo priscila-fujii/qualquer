@@ -1,5 +1,5 @@
-const btn7 = document.getElementById('testemunhas');
+const btn6 = document.querySelector('#testemunhas');
 
-btn7.addEventListener('click', () => {
-    window.location.replace('../interrogacao.html');
+btn6.addEventListener('click', () => {
+    window.location.replace('interrogacao.html');
 })

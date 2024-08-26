@@ -1,5 +1,3 @@
-const secao = document.querySelector(".container");
-
 const btn1 = document.getElementById("op1");
 const btn2 = document.getElementById("op2");
 const resposta = "O atrito aconteceu pois Bruno foi amante da namorada de Marcos";
